@@ -1,0 +1,212 @@
+/*Reset*/
+
+/*Fuentes*/
+
+/*Tema/Skins*/
+body {
+    background-color: black;
+    color: white;
+}
+
+a{
+    color: #ffeb3b;
+}
+
+a:hover {
+    color:#ccbc2c;
+}
+
+.bg-primary {
+    background-color: #ff1744;
+}
+
+footer {
+    background-color: #b71c1c;
+}
+
+.accordion-button {
+    background-color: #ffeb3b !important;
+}
+
+.accordion-item {
+    background-color: #ff1744 !important;
+}
+
+.btn {
+    background-color: #ffeb3b !important;
+    color: black;
+}
+
+.modal {
+    color: black !important;
+}
+
+.card1 {
+    background-color: #ff1744;
+}
+
+.card2 {
+    background-color: #ff1744;
+}
+
+nav.navbar {
+    background-color: #ff1744 !important;
+}
+
+div.collapse {
+    color: white;
+}
+
+section.dragon {
+    background-image:
+    url(../imagenes/DCFondo.jpeg);
+}
+
+.portada {
+    background-image:
+    url(../imagenes/fondo-tarjetas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portada2 {
+    background-image:
+    url(../imagenes/DCFondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Layout*/
+div.row {
+    margin: 3rem;
+}
+
+.card1 {
+    margin-bottom: 1rem;
+}
+
+iframe{
+    border:0 ;
+  }
+
+#Galeria a {
+    display: block;
+    position: relative;
+}
+
+#Galeria a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 235, 60, 0.6);
+    background-image: url(../imagenes/zoom-in.svg);
+    background-size: 5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+
+#Galeria a:hover:after {
+    opacity: 1;
+}
+
+#Galeria2 a {
+    display: block;
+    position: relative;
+}
+
+#Galeria2 a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 235, 60, 0.6);
+    background-image: url(../imagenes/zoom-in.svg);
+    background-size: 5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+
+#Galeria2 a:hover:after {
+    opacity: 1;
+}
+
+#Galeria3 a {
+    display: block;
+    position: relative;
+}
+
+#Galeria3 a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 235, 60, 0.6);
+    background-image: url(../imagenes/zoom-in.svg);
+    background-size: 5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+
+#Galeria3 a:hover:after {
+    opacity: 1;
+}
+
+#FormularioContacto {
+    background-color:#ff1744;
+    width: 25rem;
+    padding:1.25rem 1.563rem;
+    padding:1.25rem 1.563rem;
+    color: white;
+}
+
+#FormularioContacto input, 
+#FormularioContacto textarea {
+    display: block ;
+    width: 100% ;
+    padding:0.5rem 1rem;
+    margin-top:0.938rem;
+    border-width: 0;
+    border-bottom: 0.125rem solid white;
+    background-color:transparent;
+    color: white;
+}
+
+#FormularioContacto input[type=submit]{
+    background-color:#ffeb3b ;
+    color:black;
+    border: 0rem;
+}
+
+#FormularioContacto label {
+    display: block;
+    margin-bottom:0.938rem;
+}
+
+#FormularioContacto input:focus:invalid, 
+#FormularioContacto textarea:focus:invalid {
+    background-color: lightcoral ;
+}
+
+#FormularioContacto input:focus:valid, 
+#FormularioContacto textarea:focus:valid {
+    background-color: lightgreen ;
+}
