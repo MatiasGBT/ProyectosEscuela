@@ -1,0 +1,250 @@
+/*Reset*/
+html{
+    scroll-behavior: smooth;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+body {
+    margin:0;
+}
+
+*{
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+
+
+/*Fuentes*/
+body {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,a {
+    font-family: 'Fanwood Text', serif;
+}
+
+.menu a{
+    font-size: 24px;
+}
+
+.portada {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/*Tema/Skins*/
+body{
+    background-color: #f9f4ef;
+    color: #020826;
+}
+
+p, li{
+    color: #473d29;
+}
+
+a{
+    color: #ff912a;
+}
+
+a:hover {
+    color:#b86a20;
+}
+
+.menu {
+    background-color: #c7c1bd;
+    color: #020826;
+}
+
+.menu ul a{
+    background-color:#8c7851 ;
+    color: #fffffe;
+    padding: 10px 30px;
+    border-radius: 25px;
+    transition: background .3s linear;
+}
+
+.menu ul a:hover {
+    background-color: #f25042;
+    color: #ffffff;
+}
+
+.menu ul a:active {
+    background-color:#d63f32 ;
+    color: #ffffff;
+}
+
+.portada{
+    background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.712), rgba(255, 255, 255, 0.89)),
+    url(../imagenes/fondo-burguer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0;
+    text-align: center;
+} 
+
+.pie {
+    background-color:#f25042;
+    color:#fffffe;
+    padding: 40px ;
+    text-align: center;
+}
+
+.piep {
+    background-color:#f25042;
+    color:#fffffe;
+    text-align: center;
+}
+
+/*Layout*/
+main {
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    z-index: 99999;
+}
+
+.menu > div {
+    display: flex;
+    justify-content: space-between;
+    width:1024px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    margin-right: 10px;
+}
+
+.fila {
+    display: flex;
+    margin: 30px -8px;
+}
+
+.fila > div {
+    padding: 0 8px;
+}
+
+#QuienesSomos .fila {
+    justify-content: space-around;
+}
+
+#Contacto .fila {
+    justify-content: space-between;
+}
+
+section{
+    padding: 70px 0 ;
+}
+
+#Galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Galeria img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#Galeria a {
+    display: block;
+    width: 25%;
+    position: relative;
+}
+
+#Galeria a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 65, 31, 0.8);
+    background-image: url(../imagenes/zoom-in.svg);
+    background-size: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+
+#Galeria a:hover:after {
+    opacity: 1;
+}
+
+.redes {
+    display: flex;
+    padding-left: 587px;
+    padding-right: 587px;
+}
+
+#FormularioContacto {
+    border:2px solid crimson;
+    background-color:#c7c1bd;
+    width: 400px;
+    padding:20px 25px;
+    color: white;
+}
+
+#FormularioContacto input, 
+#FormularioContacto textarea {
+    display: block ;
+    width: 100% ;
+    padding:8px 16px;
+    font-family: inherit ;
+    margin-top:15px;
+    border-width: 0;
+    border-bottom: 2px solid crimson;
+    background-color:transparent;
+    color: white;
+}
+
+#FormularioContacto input[type=submit]{
+    background-color:crimson ;
+    color:white;
+    border: 0px;
+}
+
+#FormularioContacto label {
+    display: block;
+    margin-bottom:15px;
+}
+
+#FormularioContacto input:focus:invalid, 
+#FormularioContacto textarea:focus:invalid {
+    background-color: lightcoral ;
+}
+
+#FormularioContacto input:focus:valid, 
+#FormularioContacto textarea:focus:valid {
+    background-color: lightgreen ;
+}

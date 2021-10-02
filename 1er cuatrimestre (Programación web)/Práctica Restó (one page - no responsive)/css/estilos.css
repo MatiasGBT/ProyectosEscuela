@@ -1,0 +1,320 @@
+/*
+RESET
+*/
+html{
+    scroll-behavior: smooth ;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0 ;
+  
+}
+nav a {
+    text-decoration: none;
+}
+
+body {
+    margin:0;
+}
+
+*{
+    box-sizing: border-box ;
+
+     
+   /* outline: 1px solid red;*/
+}
+
+
+/*
+FUENTES
+*/
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size:20px;
+}
+
+h1{
+    font-family: 'Crimson Text', serif;
+}
+
+h2, a {
+    font-family: 'Dancing Script', cursive;
+}
+
+label,
+input, 
+textarea,
+p {
+    font-weight: 600 ;
+}
+
+.menu a {
+    font-size: 24px;
+}
+
+
+
+
+/*
+TEMA, SKIN
+*/
+.menu,
+body {
+    background-color: #fec7d7 ;
+    color: #0e172c ;
+}
+
+a{
+    color: #a786df;
+}
+a:hover {
+    color:#681ee9;
+}
+
+
+.menu ul a {
+    background-color:#0e172c;
+    color:#fffffe;
+    padding:10px 30px;
+    border-radius: 25px;
+
+    transition: background .3s linear;
+}
+/*pseudo clase*/
+.menu ul a:hover {
+    background-color: #264283;
+    color: #ffffff;
+}
+.menu ul a:active {
+    background-color: #132f72;
+    color: #ffffff;
+}
+
+
+.portada{
+    background-image:
+    linear-gradient(45deg, rgba(255,255,255,0.2), rgba(254, 199, 215, 0.8)),
+    url(../imagenes/fondo-cocina.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0;
+    text-align: center ;
+
+} 
+
+.pie {
+    background-color:#0e172c;
+    color:#fffffe;
+    padding: 40px ;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*
+LAYOUT, composición de página
+*/
+body {
+    padding-top:70px;
+}
+
+
+.imagen-pegada {
+    position: sticky ;
+    top: 120px;
+}
+
+.menu{
+   
+
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 99999;
+
+    padding:8px;
+}
+.menu > div {
+    display: flex;
+    justify-content: space-between ;
+    width:1024px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.menu ul {
+    display: flex;
+}
+.menu li {
+    margin-right: 10px ;
+}
+
+main {
+    width:1024px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+/*
+para layoput encolumnados, se recomienda trabajar con sistemas de grilla
+filas, columnas, calles, márgenes
+*/
+.fila {
+    display: flex;
+    margin: 30px -8px;
+}
+.fila > div {
+    padding: 0 8px;
+}
+
+.orden-2 {
+    order: 2;
+}
+.ancho-350{
+    width: 350px;
+}
+
+#QuienesSomos .fila {
+    justify-content: space-around;
+}
+#Contacto .fila {
+    justify-content: space-between;
+}
+
+
+
+#Galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Galeria img {
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+#Galeria a {
+    display: block;
+    width:25%;
+    position: relative;
+}
+/*pseudo elemento*/ 
+#Galeria a::after {
+    content: "";
+    display: block ;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(255,255,255,0.8);
+    background-image: url(../imagenes/zoom-in.svg);
+    background-size: 80px;
+    background-position: center center ;
+    background-repeat: no-repeat;
+
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+#Galeria a:hover::after {
+    opacity: 1;
+}
+
+
+section{
+    padding: 120px 0 ;
+}
+
+
+#FormularioContacto {
+
+    border:2px solid crimson;
+    background-color:rgba(255, 255, 255, 0.4);
+    width:400px;
+    padding:20px 25px;
+
+}
+
+#FormularioContacto input, 
+#FormularioContacto textarea {
+    display: block ;
+    width: 100% ;
+    padding:8px 16px;
+    font-family: inherit ;
+    margin-top:15px;
+    border-width: 0;
+    border-bottom: 2px solid crimson;
+    background-color:transparent;
+
+}
+/* 
+selector de atributo
+*/
+#FormularioContacto input[type=submit]{
+    background-color:crimson ;
+    color:white; 
+    
+}
+
+
+#FormularioContacto label {
+    display: block;
+    margin-bottom:15px;
+}
+
+/*
+estado en foco del documento 
+*/
+#FormularioContacto input:focus, 
+#FormularioContacto textarea:focus {
+    outline: 3px dashed yellowgreen;
+    outline-offset: 10px;
+   
+}
+/*
+ 
+y estados de validación
+*/
+
+#FormularioContacto input:focus:invalid, 
+#FormularioContacto textarea:focus:invalid {
+    background-color: lightcoral ;
+}
+
+#FormularioContacto input:focus:valid, 
+#FormularioContacto textarea:focus:valid {
+    background-color: lightgreen ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+MEDIAQUERIES, adaptaciones a dispositivos
+*/
